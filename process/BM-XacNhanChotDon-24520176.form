@@ -1,0 +1,131 @@
+{
+  "components": [
+    {
+      "text": "# Xác nhận chốt đơn",
+      "type": "text",
+      "id": "Field_0a6p9i4",
+      "layout": {
+        "row": "Row_1j20o6y"
+      }
+    },
+    {
+      "label": "Tên khách hàng",
+      "key": "customerName",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_1ohpduv",
+      "layout": {
+        "row": "Row_0900xfo"
+      }
+    },
+    {
+      "label": "Email khách hàng",
+      "key": "customerEmail",
+      "type": "textfield",
+      "validate": {
+        "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+      },
+      "id": "Field_0f01xlf",
+      "layout": {
+        "row": "Row_184c3c9"
+      }
+    },
+    {
+      "label": "Mã sản phẩm",
+      "key": "productCode",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_0nipwp8",
+      "layout": {
+        "row": "Row_09po6mu"
+      }
+    },
+    {
+      "label": "Tên sản phẩm",
+      "key": "productName",
+      "type": "textfield",
+      "validate": {
+        "required": false
+      },
+      "id": "Field_0prodname1",
+      "layout": {
+        "row": "Row_0prodname1"
+      }
+    },
+    {
+      "label": "Số lượng",
+      "key": "quantity",
+      "type": "number",
+      "validate": {
+        "required": true,
+        "min": 1
+      },
+      "id": "Field_01z94kh",
+      "layout": {
+        "row": "Row_0pjtxdm"
+      }
+    },
+    {
+      "label": "Đơn giá",
+      "key": "unitPrice",
+      "type": "number",
+      "validate": {
+        "required": false,
+        "min": 0
+      },
+      "id": "Field_0unitprice1",
+      "layout": {
+        "row": "Row_0unitprice1"
+      }
+    },
+    {
+      "label": "Hình thức nhận hàng",
+      "values": [
+        {
+          "label": "Giao hàng",
+          "value": "delivery"
+        },
+        {
+          "label": "Nhận tại cửa hàng",
+          "value": "store"
+        },
+        {
+          "label": "Nhận tại đại lý",
+          "value": "agent"
+        }
+      ],
+      "key": "deliveryMethod",
+      "type": "select",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_0fyjn23",
+      "layout": {
+        "row": "Row_1qxp1lj"
+      }
+    },
+    {
+      "label": "Địa chỉ nhận hàng",
+      "key": "deliveryAddress",
+      "type": "textarea",
+      "conditional": {
+        "hide": "=deliveryMethod != \"delivery\""
+      },
+      "id": "Field_0s1azev",
+      "layout": {
+        "row": "Row_1oqvpmm"
+      }
+    }
+  ],
+  "id": "BM-XacNhanChotDon-24520176",
+  "type": "default",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.46.1"
+  },
+  "schemaVersion": 19
+}

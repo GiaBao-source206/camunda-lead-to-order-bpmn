@@ -1,0 +1,20 @@
+{
+  "name": "bot2-save-score-lead",
+  "version": "1.0.0",
+  "description": "BOT lưu lead và chấm điểm AI bằng Groq — Camunda External Task Worker",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "camunda-external-task-client-js": "^2.3.0",
+    "groq-sdk": "^0.5.0",
+    "googleapis": "^140.0.1",
+    "dotenv": "^16.4.5",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

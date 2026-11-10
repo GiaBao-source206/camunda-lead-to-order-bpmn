@@ -1,0 +1,10 @@
+node_modules/
+.env
+credentials/
+logs/
+*.log
+invoices/
+output/
+.DS_Store
+package-lock.json
+!bots/*/package-lock.json

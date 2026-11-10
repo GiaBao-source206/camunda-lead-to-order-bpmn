@@ -1,0 +1,23 @@
+{
+  "name": "bot1-send-campaign",
+  "version": "1.0.0",
+  "description": "BOT gửi chiến dịch đa kênh - Camunda External Task Worker",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "camunda-external-task-client-js": "^2.3.0",
+    "nodemailer": "^6.9.14",
+    "googleapis": "^140.0.1",
+    "dotenv": "^16.4.5",
+    "winston": "^3.13.0",
+    "axios": "^1.7.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
