@@ -1,0 +1,77 @@
+{
+  "components": [
+    {
+      "text": "# Chuẩn bị chiến dịch",
+      "type": "text",
+      "id": "Field_0ae92ea",
+      "layout": {
+        "row": "Row_1caf0gq"
+      }
+    },
+    {
+      "label": "Tên chiến dịch",
+      "key": "campaignName",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_0v36wmc",
+      "layout": {
+        "row": "Row_1viufnk"
+      }
+    },
+    {
+      "label": "Kênh truyền thông",
+      "values": [
+        {
+          "label": "Telegram",
+          "value": "telegram"
+        },
+        {
+          "label": "Email",
+          "value": "email"
+        }
+      ],
+      "key": "channel",
+      "type": "checklist",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_1b5k794",
+      "layout": {
+        "row": "Row_01yjecq"
+      }
+    },
+    {
+      "label": "Nội dung / CTKM",
+      "key": "promoContent",
+      "type": "textarea",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_1eua11d",
+      "layout": {
+        "row": "Row_09twoy2"
+      }
+    },
+    {
+      "label": "Sản phẩm chính",
+      "key": "productName",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_034c0g8",
+      "layout": {
+        "row": "Row_0avzdgx"
+      }
+    }
+  ],
+  "id": "BM-ChuanBiChienDich-24520176",
+  "type": "default",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.46.1"
+  },
+  "schemaVersion": 19
+}

@@ -19,12 +19,12 @@ A lead-to-order business process modeled in BPMN 2.0 and executed on Camunda 7, 
 
 ## Structure
 ```
-process/          final BPMN, diagram PNG, Camunda form
+process/          final BPMN, diagram PNG, 5 Camunda forms
 process/drafts/   earlier BPMN versions
 bots/             Node.js Camunda external-task workers
 ```
 
 ## Run a worker
-1. Deploy `process/QT08-...bpmn` and the form to Camunda 7 (`http://localhost:8080/engine-rest`).
+1. Deploy `process/QT08-...bpmn` and the 5 forms to Camunda 7 (`http://localhost:8080/engine-rest`).
 2. In each bot folder: copy `.env.example` to `.env`, fill in keys, put a Google service-account key at `credentials/google-service-account.json`.
 3. `npm install && npm start`

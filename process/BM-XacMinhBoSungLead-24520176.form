@@ -1,0 +1,58 @@
+{
+  "components": [
+    {
+      "text": "# Bổ sung / xác minh lead",
+      "type": "text",
+      "id": "Field_1mjnjsq",
+      "layout": {
+        "row": "Row_07ut5yo"
+      }
+    },
+    {
+      "label": "Email khách hàng",
+      "key": "leadEmail",
+      "type": "textfield",
+      "validate": {
+        "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+      },
+      "id": "Field_0c7lbkc",
+      "layout": {
+        "row": "Row_1dn92xl"
+      }
+    },
+    {
+      "label": "Nhu cầu khách hàng",
+      "key": "customerNeed",
+      "type": "textarea",
+      "id": "Field_08wi3pr",
+      "layout": {
+        "row": "Row_0xo1rpc"
+      }
+    },
+    {
+      "label": "Khu vực",
+      "key": "area",
+      "type": "textfield",
+      "id": "Field_1r33bbf",
+      "layout": {
+        "row": "Row_1xrjsoj"
+      }
+    },
+    {
+      "label": "Ghi chú xác minh",
+      "key": "verifyNote",
+      "type": "textarea",
+      "id": "Field_0odiv3x",
+      "layout": {
+        "row": "Row_05m1tgm"
+      }
+    }
+  ],
+  "id": "BM-XacMinhBoSungLead-24520176",
+  "type": "default",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.46.1"
+  },
+  "schemaVersion": 19
+}

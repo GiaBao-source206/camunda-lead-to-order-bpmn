@@ -1,0 +1,62 @@
+{
+  "components": [
+    {
+      "text": "# Tư vấn sản phẩm",
+      "type": "text",
+      "id": "Field_0ldn6fd",
+      "layout": {
+        "row": "Row_1jx2lj1"
+      }
+    },
+    {
+      "label": "Sản phẩm đề xuất",
+      "key": "recommendedProduct",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_05crhql",
+      "layout": {
+        "row": "Row_0fne67b"
+      }
+    },
+    {
+      "label": "Ngân sách dự kiến",
+      "key": "budget",
+      "type": "number",
+      "validate": {
+        "min": 0
+      },
+      "id": "Field_1q0cc4r",
+      "layout": {
+        "row": "Row_0zqa5rb"
+      }
+    },
+    {
+      "label": "Nội dung tư vấn",
+      "key": "consultingNote",
+      "type": "textarea",
+      "id": "Field_07mcch9",
+      "layout": {
+        "row": "Row_0lynmn6"
+      }
+    },
+    {
+      "label": "Khách có mua không?",
+      "key": "customerInterested",
+      "type": "checkbox",
+      "defaultValue": false,
+      "id": "Field_04b620d",
+      "layout": {
+        "row": "Row_1mg9y2l"
+      }
+    }
+  ],
+  "id": "BM-TuVanSanPham-24520176",
+  "type": "default",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.46.1"
+  },
+  "schemaVersion": 19
+}

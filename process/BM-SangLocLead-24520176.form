@@ -1,0 +1,156 @@
+{
+  "components": [
+    {
+      "text": "# Sàng lọc lead",
+      "type": "text",
+      "id": "Field_0263u9t",
+      "layout": {
+        "row": "Row_1g0db0q"
+      }
+    },
+    {
+      "label": "Tên khách hàng",
+      "key": "leadName",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_1e1oa5n",
+      "layout": {
+        "row": "Row_0jtkgdi"
+      }
+    },
+    {
+      "label": "Số điện thoại",
+      "key": "leadPhone",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_1emnbe6",
+      "layout": {
+        "row": "Row_13iqfl2"
+      }
+    },
+    {
+      "label": "Email",
+      "key": "leadEmail",
+      "type": "textfield",
+      "validate": {
+        "required": false
+      },
+      "id": "Field_0jfkcx8",
+      "layout": {
+        "row": "Row_0cn1m3q"
+      }
+    },
+    {
+      "label": "Nguồn lead",
+      "values": [
+        {
+          "label": "Referral",
+          "value": "referral"
+        },
+        {
+          "label": "Organic",
+          "value": "organic"
+        },
+        {
+          "label": "Paid",
+          "value": "paid"
+        },
+        {
+          "label": "Unknown",
+          "value": "unknown"
+        }
+      ],
+      "key": "leadSource",
+      "type": "select",
+      "defaultValue": "unknown",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_0e89en5",
+      "layout": {
+        "row": "Row_1oxdyl1"
+      }
+    },
+    {
+      "label": "Khu vực",
+      "key": "leadArea",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_1qlr78m",
+      "layout": {
+        "row": "Row_0i11y8s"
+      }
+    },
+    {
+      "label": "Nhu cầu",
+      "key": "leadNeed",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_0t24m8v",
+      "layout": {
+        "row": "Row_1uzo4nc"
+      }
+    },
+    {
+      "label": "Mức độ ưu tiên",
+      "values": [
+        {
+          "label": "Hot",
+          "value": "hot"
+        },
+        {
+          "label": "Warm",
+          "value": "warm"
+        },
+        {
+          "label": "Cold",
+          "value": "cold"
+        }
+      ],
+      "key": "leadPriority",
+      "type": "select",
+      "defaultValue": "warm",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_03yg1tx",
+      "layout": {
+        "row": "Row_1ojy0dw"
+      }
+    },
+    {
+      "label": "Thông tin lead đầy đủ?",
+      "key": "leadComplete",
+      "type": "checkbox",
+      "defaultValue": false,
+      "id": "Field_0nn7kbs",
+      "layout": {
+        "row": "Row_07s4sr1"
+      }
+    },
+    {
+      "label": "Ghi chú xác minh",
+      "key": "verifyNote",
+      "type": "textarea",
+      "id": "Field_0sc4b9a",
+      "layout": {
+        "row": "Row_0wingon"
+      }
+    }
+  ],
+  "id": "BM-SangLocLead-24520176",
+  "type": "default",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.46.1"
+  },
+  "schemaVersion": 19
+}
