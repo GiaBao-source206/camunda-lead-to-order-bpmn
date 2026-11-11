@@ -4,12 +4,12 @@ Individual lab project, course *Business Process Analysis & Design* (UIT, May 20
 
 A lead-to-order business process modeled in BPMN 2.0 and executed on Camunda 7, with three service tasks automated by external-task workers.
 
-![Process diagram](process/QT08-QuyTrinhThuHut&ChuyenDoiKhachHangDaKenh.png)
+![Process diagram](docs/QT08-QuyTrinhThuHut&ChuyenDoiKhachHangDaKenh.png)
 
 ## Process
 - Lanes: Marketing, Sales / Customer Service, Warehouse
 - Gateways: lead completeness, purchase intent, stock availability
-- User tasks use Camunda forms (`process/*.form`)
+- User tasks use Camunda forms (`process/forms/*.form`)
 
 | Service task | Topic | Worker |
 |---|---|---|
@@ -19,12 +19,14 @@ A lead-to-order business process modeled in BPMN 2.0 and executed on Camunda 7, 
 
 ## Structure
 ```
-process/          final BPMN, diagram PNG, 5 Camunda forms
+process/          final BPMN (QT08)
+process/forms/    5 Camunda forms used by the user tasks
 process/drafts/   earlier BPMN versions
 bots/             Node.js Camunda external-task workers
+docs/             process diagram (PNG)
 ```
 
 ## Run a worker
-1. Deploy `process/QT08-...bpmn` and the 5 forms to Camunda 7 (`http://localhost:8080/engine-rest`).
+1. Deploy `process/QT08-...bpmn` and the 5 forms in `process/forms/` to Camunda 7 (`http://localhost:8080/engine-rest`).
 2. In each bot folder: copy `.env.example` to `.env`, fill in keys, put a Google service-account key at `credentials/google-service-account.json`.
 3. `npm install && npm start`
